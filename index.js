@@ -179,6 +179,8 @@ function connect (up, cons) {
         };
         
         return res;
+    }, {
+      weak: opts.weak
     });
     
     client.once('up', function (r) {
